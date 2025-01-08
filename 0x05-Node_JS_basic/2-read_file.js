@@ -1,7 +1,5 @@
-import * as fs from 'node:fs';
-
 function countStudents(path) {
-//   const fs = require('fs');
+  const fs = require('fs');
   try {
     const data = fs.readFileSync(path, 'utf-8');
 
