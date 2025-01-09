@@ -7,8 +7,6 @@ app.get('/', (req, res) => {
   res.send('Hello ALX!');
 });
 
-app.listen(port, () => {
-  console.log(`Running on port ${port}`);
-});
+app.listen(port);
 
 module.exports = app;
