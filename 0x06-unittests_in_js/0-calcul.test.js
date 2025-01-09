@@ -14,4 +14,7 @@ describe("addition test", function(){
     it('rounds b', () => {
         assert.strictEqual(calculateNumber(0, -3.7), -4); 
     });
+    it('produces a rounded number', () => {
+        assert.strictEqual(calculateNumber(0, -3.7), -4)
+    });
 })
