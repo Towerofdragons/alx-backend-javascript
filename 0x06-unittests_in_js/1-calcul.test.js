@@ -1,4 +1,4 @@
-const { describe } = require("node:test");
+const { describe, it } = require("node:test");
 const calculateNumber = require("./1-calcul.js");
 const assert =  require("assert");
 
