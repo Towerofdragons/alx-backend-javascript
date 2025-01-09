@@ -22,6 +22,6 @@ describe("Test 1-calcul DIVIDE", ()=> {
     });
 
     it("has correct output for DIVIDE when b is 0", () => {
-        assert.equal(calculateNumber("SUM",2,3), Error);
+        assert.equal(calculateNumber("DIVIDE",2,0), "Error");
     })
 });
