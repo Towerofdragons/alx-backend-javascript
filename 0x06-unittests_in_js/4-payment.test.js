@@ -6,7 +6,7 @@ const Utils = require('./utils');
 
 describe('Testing sendPaymentRequestToApi', () => {
   it('uses Utils.calculateNumber to compute the sum', () => {
-    const calculateNumberSpy = sinon.spy(Utils, 'calculateNumber');
+    //const calculateNumberSpy = sinon.spy(Utils, 'calculateNumber');
     const calculateNumberStub = sinon.stub(Utils, 'calculateNumber').returns(10);
 
     const consoleLogSpy = sinon.spy(console, 'log');
@@ -22,7 +22,7 @@ describe('Testing sendPaymentRequestToApi', () => {
     sinon.assert.calledWith(consoleLogSpy, 'The total is: 10');
 
     // Restore the spy
-    calculateNumberSpy.restore();
+    //calculateNumberSpy.restore();
     consoleLogSpy.restore();
   });
 });
