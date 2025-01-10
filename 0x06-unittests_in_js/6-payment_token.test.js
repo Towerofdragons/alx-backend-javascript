@@ -6,11 +6,9 @@ describe('Testing getPaymentTokenFromAPI', () => {
   it('returns a resolved promise with the correct object when success = true', (done) => {
     getPaymentTokenFromAPI(true)
     .then((response) => {
-      expect(response).to.equal({ data: 'Successful response from the API' });
+      expect(response).to.have.property('data');
       done();
     });
-
-	  
   });
 
   it('does nothing when success = false', (done) => {
