@@ -7,7 +7,7 @@ app.get('/', (req,res) => {
   res.send('Welcome to the payment system');
 });
 
-app.get('/cart/:id', (req,res) => {
+app.get('/cart/:id([0-9]+)', (req,res) => {
   if (isNaN(req.params.id)) {
     return res.status(404).send('ID must be a number');
   }
